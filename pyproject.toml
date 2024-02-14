@@ -7,7 +7,14 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+requests = "^2.31.0"
+httpx = "^0.26.0"
+fake-useragent = "^1.4.0"
 
+
+[tool.poetry.group.test.dependencies]
+black = "^24.2.0"
+isort = "^5.13.2"
 
 [build-system]
 requires = ["poetry-core"]
