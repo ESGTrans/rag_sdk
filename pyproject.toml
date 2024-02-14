@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "rag-sdk"
+version = "0.1.0"
+description = ""
+authors = ["A-baoYang <rubyyang0615@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
