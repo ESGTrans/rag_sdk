@@ -42,9 +42,8 @@ class RequestSender:
             try:
 
                 with httpx.stream(
-                    method, url, headers=self.headers, params=params
-                    json=data,
-                    timeout=self.default_timeout
+                    method, url, headers=self.headers, params=params,
+                    json=data, timeout=self.default_timeout
                 ) as r:
                     for text in r.iter_text():
                         yield text
